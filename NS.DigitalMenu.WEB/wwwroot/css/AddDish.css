@@ -1,0 +1,64 @@
+/* *
+{
+    color:white;
+} */
+
+.yo
+{
+    background-size: cover;
+    height:750px;
+    width:1300px
+    
+}
+
+
+
+.FormBackground
+{
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+.topic
+{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+}
+
+.btn1:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation: 5s linear infinite alternate slidein;
+
+}
+.Quantity
+{
+    color:black
+}
+
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+option value
+{
+    color:blue
+}
+
+@media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  .yo
+  {
+    background-size: cover;
+  }
