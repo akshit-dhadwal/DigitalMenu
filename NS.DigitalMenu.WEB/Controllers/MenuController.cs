@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using NS.DigitalMenuBusiness;
+using NS.DigitalMenuData.Entities;
 using NS.DigitalMenuModel;
 using System;
 using System.IO;
@@ -54,6 +55,36 @@ namespace NS.DigitalMenu.WEB.Controllers
         {
 
             return View(_imenubusiness.ShowDishes());
+        }
+
+        public IActionResult GetDishById(int Id)
+        {
+            
+            return View(_imenubusiness.GetDishById(Id));
+        }
+
+        
+        public IActionResult UpdateDish(int Id)
+        {
+            return View(_imenubusiness.GetDishById(Id));
+        }
+
+       [HttpPost]
+        public IActionResult UpdateDish(Menu menu)
+        {
+            if (ModelState.IsValid)
+            {
+                _imenubusiness.UpdateDish(menu);
+
+
+                return RedirectToAction("Index");
+
+            }
+            else
+            {
+                return View(menu);
+            }
+            //return View(_imenubusiness.UpdateDish(menuModel, Id));
         }
     }
 }
