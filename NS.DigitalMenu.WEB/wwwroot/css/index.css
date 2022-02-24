@@ -1,0 +1,45 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+.yo
+{
+    background-size: cover;
+    height:550px;
+    width:1200px
+    
+}
+.Main
+{
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+.topic
+{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+}
+
+.btn1:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation: 5s linear infinite alternate slidein;
+
+}
+
+@media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  .yo
+  {
+    background-size: cover;
+  }
