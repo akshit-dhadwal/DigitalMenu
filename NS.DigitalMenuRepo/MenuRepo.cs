@@ -105,45 +105,57 @@ namespace NS.DigitalMenuRepo
 
         }
 
-        public bool UpdateDish(MenuModel menuModel)
+        public bool UpdateDish(Menu menu,int DishId)
         {
-            //    using (var context = new MenuDBContext())
-            //    {
+            //using (var context = new MenuDBContext())
+            //{
 
-            //        //Menu menu = new Menu();
+            //    //Menu menu = new Menu();
 
 
-            //        //menu.DishId = DishId;
-            //        //menu.DishName = menuModel.DishName;
-            //        //menu.DishCategory = menuModel.DishCategory;
-            //        //menu.DishType = (Menu.Type)menuModel.DishType;
-            //        //menu.DishDescription = menuModel.DishDescription;
-            //        //menu.DishPrice = menuModel.DishPrice;
-            //        //menu.DishQuantity = (Menu.Qunatity)menuModel.DishQuantity;
-            //        //menu.DishImageUrl = menuModel.DishImageUrl;
-            //        //context.Menus.Update(menu);
-            //        context.Entry(menu).State = EntityState.Modified;
-            //        context.SaveChanges();
-            //    }
+            //    //menu.DishId = DishId;
+            //    //menu.DishName = menuModel.DishName;
+            //    //menu.DishCategory = menuModel.DishCategory;
+            //    //menu.DishType = (Menu.Type)menuModel.DishType;
+            //    //menu.DishDescription = menuModel.DishDescription;
+            //    //menu.DishPrice = menuModel.DishPrice;
+            //    //menu.DishQuantity = (Menu.Qunatity)menuModel.DishQuantity;
+            //    //menu.DishImageUrl = menuModel.DishImageUrl;
+            //    //context.Menus.Update(menu);
+            //    context.Entry(menuModel).State = EntityState.Modified;
+            //    context.SaveChanges();
+            //}
             using (var context = new MenuDBContext())
             {
                 var paraamList = new List<SqlParameter>();
-                paraamList.Add(new SqlParameter("@DishId", menuModel.DishId));
-                paraamList.Add(new SqlParameter("@DishName", menuModel.DishName));
-                paraamList.Add(new SqlParameter("@DishCategory", menuModel.DishCategory));
-                paraamList.Add(new SqlParameter("@DishType", menuModel.DishType));
-                paraamList.Add(new SqlParameter("@DishDescription", menuModel.DishDescription));
-                paraamList.Add(new SqlParameter("@DishPrice", menuModel.DishPrice));
-                paraamList.Add(new SqlParameter("@DishQuantity", menuModel.DishQuantity));
-                paraamList.Add(new SqlParameter("@DishImageUrl", menuModel.DishImageUrl));
-               // paraamList.Add(new SqlParameter("@Describe", candidateModel.Describe));
+                paraamList.Add(new SqlParameter("@DishId", menu.DishId));
+                paraamList.Add(new SqlParameter("@DishName", menu.DishName));
+                paraamList.Add(new SqlParameter("@DishCategory", menu.DishCategory));
+                paraamList.Add(new SqlParameter("@DishType", menu.DishType));
+                paraamList.Add(new SqlParameter("@DishDescription", menu.DishDescription));
+                paraamList.Add(new SqlParameter("@DishPrice", menu.DishPrice));
+                paraamList.Add(new SqlParameter("@DishQuantity", menu.DishQuantity));
+                paraamList.Add(new SqlParameter("@DishImageUrl", menu.DishImageUrl));
+                // paraamList.Add(new SqlParameter("@Describe", candidateModel.Describe));
                 context.Database.ExecuteSqlRaw("USP_Update @DishId, @DishName, @DishDescription,@DishPrice,@DishCategory, @DishType, @DishQuantity, @DishImageUrl", paraamList);
             }
             return true;
 
 
         }
-            
-        
+        public bool DeleteDish(Menu menu)
+        {
+            using (var context = new MenuDBContext())
+            {
+                var paraamList = new List<SqlParameter>();
+                paraamList.Add(new SqlParameter("@DishId", menu.DishId));
+                context.Database.ExecuteSqlRaw("USP_Delete @DishId", paraamList);
+
+            }
+                return true;
+        }
+
+
+
     }
 }

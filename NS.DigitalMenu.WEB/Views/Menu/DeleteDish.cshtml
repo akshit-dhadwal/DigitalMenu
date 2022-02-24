@@ -1,0 +1,76 @@
+﻿@model NS.DigitalMenuData.Entities.Menu
+
+@{
+    ViewData["Title"] = "DeleteDish";
+}
+
+<h1>DeleteDish</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Menu</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DishId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DishId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DishName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DishName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DishDescription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DishDescription)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DishPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DishPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DishCategory)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DishCategory)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DishType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DishType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DishQuantity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DishQuantity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DishImageUrl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DishImageUrl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+    </dl>
+   @* <a class="btn btn-outline-primary" asp-action="DeleteDish" asp-controller="Menu" asp-route-id="@Model.DishId">
+                       Delete
+                    </a>*@
+    <form asp-action="DeleteDish" asp-controller="Menu" asp-route-id="@Model.DishId" method="post">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="ShowDishes">Back to List</a>
+    </form>
+</div>

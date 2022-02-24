@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NS.DigitalMenuBusiness
 {
-   public class MenuBusiness : IMenuBusiness
+    public class MenuBusiness : IMenuBusiness
     {
         private readonly IMenuRepo _imenutrepo = null;
 
@@ -33,9 +33,13 @@ namespace NS.DigitalMenuBusiness
             return _imenutrepo.GetDishById(DishId);
 
         }
-        public bool UpdateDish(MenuModel menuModel)
+        public bool UpdateDish(Menu menu, int DishId)
         {
-            return _imenutrepo.UpdateDish(menuModel);   
+            return _imenutrepo.UpdateDish(menu, DishId);
+        }
+        public bool DeleteDish(Menu menu)
+        {
+           return _imenutrepo.DeleteDish(menu);
         }
     }
 }
