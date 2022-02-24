@@ -1,0 +1,15 @@
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\bin\Debug\net5.0\NS.DigitalMenuModel.deps.json
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\bin\Debug\net5.0\NS.DigitalMenuModel.runtimeconfig.json
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\bin\Debug\net5.0\NS.DigitalMenuModel.runtimeconfig.dev.json
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\bin\Debug\net5.0\NS.DigitalMenuModel.dll
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\bin\Debug\net5.0\ref\NS.DigitalMenuModel.dll
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\bin\Debug\net5.0\NS.DigitalMenuModel.pdb
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\NS.DigitalMenuModel.csproj.AssemblyReference.cache
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\NS.DigitalMenuModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\NS.DigitalMenuModel.AssemblyInfoInputs.cache
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\NS.DigitalMenuModel.AssemblyInfo.cs
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\NS.DigitalMenuModel.csproj.CoreCompileInputs.cache
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\NS.DigitalMenuModel.dll
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\ref\NS.DigitalMenuModel.dll
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\NS.DigitalMenuModel.pdb
+C:\Users\Akshit Dadhwal\Desktop\DigitalMenu\DigitalMenu\NS.DigitalMenuModel\obj\Debug\net5.0\NS.DigitalMenuModel.genruntimeconfig.cache
