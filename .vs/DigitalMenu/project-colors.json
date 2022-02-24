@@ -1,36 +1,11 @@
 {
   "Version": 1,
   "ProjectMap": {
-    "4f1fad9e-402c-49b4-9748-4393e8987d41": {
-      "ProjectGuid": "4f1fad9e-402c-49b4-9748-4393e8987d41",
-      "DisplayName": "NS.DigitalMenu.WEB",
-      "ColorIndex": 0
-    },
-    "345e03d8-c931-425d-a607-0749415a8973": {
-      "ProjectGuid": "345e03d8-c931-425d-a607-0749415a8973",
-      "DisplayName": "NS.MenuData",
-      "ColorIndex": 1
-    },
-    "3259844d-3591-4c58-88e7-50b7d23219c7": {
-      "ProjectGuid": "3259844d-3591-4c58-88e7-50b7d23219c7",
-      "DisplayName": "NS.DigitalMenuData",
-      "ColorIndex": 2
-    },
-    "c8710b19-3a1a-4d6d-a8a9-c4c106366d82": {
-      "ProjectGuid": "c8710b19-3a1a-4d6d-a8a9-c4c106366d82",
-      "DisplayName": "NS.DigitalMenuModel",
-      "ColorIndex": 3
-    },
-    "c779ddc2-8344-451b-b188-b86804a87759": {
-      "ProjectGuid": "c779ddc2-8344-451b-b188-b86804a87759",
-      "DisplayName": "NS.DigitalMenuRepo",
-      "ColorIndex": 4
-    },
-    "895bfadf-138c-4aea-a9c7-30e4738dce94": {
-      "ProjectGuid": "895bfadf-138c-4aea-a9c7-30e4738dce94",
-      "DisplayName": "NS.DigitalMenuBusiness",
-      "ColorIndex": 5
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 0
 }

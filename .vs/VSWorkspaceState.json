@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\NS.DigitalMenu.WEB",
+    "\\NS.DigitalMenu.WEB\\Controllers",
+    "\\NS.DigitalMenu.WEB\\Properties",
+    "\\NS.DigitalMenu.WEB\\Views",
+    "\\NS.DigitalMenu.WEB\\Views\\Menu",
+    "\\NS.DigitalMenuData",
+    "\\NS.DigitalMenuData\\Entities",
+    "\\NS.DigitalMenuRepo"
+  ],
+  "SelectedNode": "\\NS.DigitalMenu.WEB\\Controllers\\MenuController.cs",
+  "PreviewInSolutionExplorer": false
+}

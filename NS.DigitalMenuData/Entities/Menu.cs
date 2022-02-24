@@ -21,7 +21,7 @@ namespace NS.DigitalMenuData.Entities
         //public DateTime? CreatedOn { get; set; }
 
         [Key]
-        public int DishId { get; set; }
+        public int DishId { get; private set; }
 
 
         [Required(ErrorMessage = "Please write the dish name")]
