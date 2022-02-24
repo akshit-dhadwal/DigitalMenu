@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj": {}
+    "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj": {
+    "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj",
+        "projectUniqueName": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj",
         "projectName": "NS.DigitalMenuData",
-        "projectPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj",
-        "packagesPath": "C:\\Users\\Akshit Dadhwal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuData\\obj\\",
+        "projectPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj",
+        "packagesPath": "C:\\Users\\harsh jangid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Akshit Dadhwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\harsh jangid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj": {
-                "projectPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj"
+              "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj": {
+                "projectPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj"
               }
             }
           }
@@ -71,6 +71,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -80,17 +94,17 @@
         }
       }
     },
-    "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj": {
+    "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj",
+        "projectUniqueName": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj",
         "projectName": "NS.DigitalMenuModel",
-        "projectPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj",
-        "packagesPath": "C:\\Users\\Akshit Dadhwal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\DigitalMenu\\DigitalMenu\\NS.DigitalMenuModel\\obj\\",
+        "projectPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj",
+        "packagesPath": "C:\\Users\\harsh jangid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Akshit Dadhwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\harsh jangid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -147,6 +161,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
