@@ -57,10 +57,10 @@ namespace NS.DigitalMenu.WEB.Controllers
             return View(_imenubusiness.ShowDishes());
         }
 
-        public IActionResult GetDishById(int Id)
+        public IActionResult GetDishById(int DishId)
         {
             
-            return View(_imenubusiness.GetDishById(Id));
+            return View(_imenubusiness.GetDishById(DishId));
         }
 
         
@@ -70,21 +70,23 @@ namespace NS.DigitalMenu.WEB.Controllers
         }
 
        [HttpPost]
-        public IActionResult UpdateDish(Menu menu)
+        public IActionResult UpdateDish(MenuModel menuModel)
         {
-            if (ModelState.IsValid)
-            {
-                _imenubusiness.UpdateDish(menu);
+            //if (ModelState.IsValid)
+            //{
+            //    _imenubusiness.UpdateDish(menuModel);
 
 
-                return RedirectToAction("Index");
+            //    return RedirectToAction("Index");
 
-            }
-            else
-            {
-                return View(menu);
-            }
-            //return View(_imenubusiness.UpdateDish(menuModel, Id));
+            //}
+            //else
+            //{
+            //    return View(menu);
+            //}
+            var res = _imenubusiness.UpdateDish(menuModel);
+            var result = _imenubusiness.ShowDishes();
+            return View("Index", result);
         }
     }
 }

@@ -28,14 +28,14 @@ namespace NS.DigitalMenuBusiness
             return _imenutrepo.ShowDishes();
         }
 
-        public Menu GetDishById(int Id)
+        public Menu GetDishById(int DishId)
         {
-            return _imenutrepo.GetDishById(Id);
+            return _imenutrepo.GetDishById(DishId);
 
         }
-        public bool UpdateDish(Menu menu)
+        public bool UpdateDish(MenuModel menuModel)
         {
-            return _imenutrepo.UpdateDish(menu);   
+            return _imenutrepo.UpdateDish(menuModel);   
         }
     }
 }

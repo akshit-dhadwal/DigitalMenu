@@ -72,55 +72,72 @@ namespace NS.DigitalMenuRepo
             return returnList;
         }
 
-        public Menu GetDishById(int Id)
+        public Menu GetDishById(int DishId)
         {
+            //var context = new MenuDBContext();
+            //var result = context.Menus.FromSqlRaw("USP_GetById @DishId", new SqlParameter("@DishId", DishId));
+            //return (Menu)result;
 
             MenuDBContext context = new MenuDBContext();
-            var menu = context.Menus.Find(Id);
+            var menu = context.Menus.SingleOrDefault(x => x.DishId == DishId);
             return menu;
             //.Where(x => x.DishId == DishId).FirstOrDefault()
             //MenuDBContext context = new MenuDBContext();
-            //    var menu = context.Menus.Find(DishId);
+            //var menu = context.Menus.Find(DishId);
 
-            //    if (menu != null)
+            //if (menu != null)
+            //{
+            //    var menudetails = new Menu()
             //    {
-            //        var menudetails = new MenuModel()
-            //        {
-            //            DishId = menu.DishId,
-            //            DishName = menu.DishName,
-            //            DishCategory = menu.DishCategory,
-            //            DishType = (MenuModel.Type)menu.DishType,
-            //            DishDescription = menu.DishDescription,
-            //            DishPrice = menu.DishPrice,
-            //            DishQuantity = (MenuModel.Qunatity)menu.DishQuantity,
-            //            DishImageUrl = menu.DishImageUrl,
-            //        };
-            //        return menudetails;
-            //    }
+            //        DishId = menu.DishId,
+            //        DishName = menu.DishName,
+            //        DishCategory = menu.DishCategory,
+            //        DishType = (Menu.Type)menu.DishType,
+            //        DishDescription = menu.DishDescription,
+            //        DishPrice = menu.DishPrice,
+            //        DishQuantity = (Menu.Qunatity)menu.DishQuantity,
+            //        DishImageUrl = menu.DishImageUrl,
+            //    };
+            //    return menudetails;
+            //}
 
             //return null;
 
         }
 
-        public bool UpdateDish(Menu menu)
+        public bool UpdateDish(MenuModel menuModel)
         {
+            //    using (var context = new MenuDBContext())
+            //    {
+
+            //        //Menu menu = new Menu();
+
+
+            //        //menu.DishId = DishId;
+            //        //menu.DishName = menuModel.DishName;
+            //        //menu.DishCategory = menuModel.DishCategory;
+            //        //menu.DishType = (Menu.Type)menuModel.DishType;
+            //        //menu.DishDescription = menuModel.DishDescription;
+            //        //menu.DishPrice = menuModel.DishPrice;
+            //        //menu.DishQuantity = (Menu.Qunatity)menuModel.DishQuantity;
+            //        //menu.DishImageUrl = menuModel.DishImageUrl;
+            //        //context.Menus.Update(menu);
+            //        context.Entry(menu).State = EntityState.Modified;
+            //        context.SaveChanges();
+            //    }
             using (var context = new MenuDBContext())
             {
-
-                //Menu menu = new Menu();
-
-
-                //menu.DishId = DishId;
-                //menu.DishName = menuModel.DishName;
-                //menu.DishCategory = menuModel.DishCategory;
-                //menu.DishType = (Menu.Type)menuModel.DishType;
-                //menu.DishDescription = menuModel.DishDescription;
-                //menu.DishPrice = menuModel.DishPrice;
-                //menu.DishQuantity = (Menu.Qunatity)menuModel.DishQuantity;
-                //menu.DishImageUrl = menuModel.DishImageUrl;
-                //context.Menus.Update(menu);
-                context.Entry(menu).State = EntityState.Modified;
-                context.SaveChanges();
+                var paraamList = new List<SqlParameter>();
+                paraamList.Add(new SqlParameter("@DishId", menuModel.DishId));
+                paraamList.Add(new SqlParameter("@DishName", menuModel.DishName));
+                paraamList.Add(new SqlParameter("@DishCategory", menuModel.DishCategory));
+                paraamList.Add(new SqlParameter("@DishType", menuModel.DishType));
+                paraamList.Add(new SqlParameter("@DishDescription", menuModel.DishDescription));
+                paraamList.Add(new SqlParameter("@DishPrice", menuModel.DishPrice));
+                paraamList.Add(new SqlParameter("@DishQuantity", menuModel.DishQuantity));
+                paraamList.Add(new SqlParameter("@DishImageUrl", menuModel.DishImageUrl));
+               // paraamList.Add(new SqlParameter("@Describe", candidateModel.Describe));
+                context.Database.ExecuteSqlRaw("USP_Update @DishId, @DishName, @DishDescription,@DishPrice,@DishCategory, @DishType, @DishQuantity, @DishImageUrl", paraamList);
             }
             return true;
 

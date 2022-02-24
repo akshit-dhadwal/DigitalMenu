@@ -12,7 +12,7 @@ namespace NS.DigitalMenuModel
     public class MenuModel
     {
         [Key]
-        public int DishId { get; set; }
+        public int DishId { get; private set; }
 
 
         [Required(ErrorMessage = "Please write the dish name")]
