@@ -7297,19 +7297,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\harsh jangid\\.nuget\\packages\\": {}
+    "C:\\Users\\Akshit Dadhwal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenu.WEB\\NS.DigitalMenu.WEB.csproj",
+      "projectUniqueName": "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenu.WEB\\NS.DigitalMenu.WEB.csproj",
       "projectName": "NS.DigitalMenu.WEB",
-      "projectPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenu.WEB\\NS.DigitalMenu.WEB.csproj",
-      "packagesPath": "C:\\Users\\harsh jangid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenu.WEB\\obj\\",
+      "projectPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenu.WEB\\NS.DigitalMenu.WEB.csproj",
+      "packagesPath": "C:\\Users\\Akshit Dadhwal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenu.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\harsh jangid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Akshit Dadhwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7323,17 +7323,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuBusiness\\NS.DigitalMenuBusiness.csproj": {
-              "projectPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuBusiness\\NS.DigitalMenuBusiness.csproj"
+            "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenuBusiness\\NS.DigitalMenuBusiness.csproj": {
+              "projectPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenuBusiness\\NS.DigitalMenuBusiness.csproj"
             },
-            "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj": {
-              "projectPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj"
+            "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj": {
+              "projectPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenuData\\NS.DigitalMenuData.csproj"
             },
-            "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj": {
-              "projectPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj"
+            "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj": {
+              "projectPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenuModel\\NS.DigitalMenuModel.csproj"
             },
-            "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuRepo\\NS.DigitalMenuRepo.csproj": {
-              "projectPath": "C:\\Users\\harsh jangid\\Desktop\\project-dotnet\\DigitalMenu\\NS.DigitalMenuRepo\\NS.DigitalMenuRepo.csproj"
+            "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenuRepo\\NS.DigitalMenuRepo.csproj": {
+              "projectPath": "C:\\Users\\Akshit Dadhwal\\Desktop\\New folder\\DigitalMenu\\NS.DigitalMenuRepo\\NS.DigitalMenuRepo.csproj"
             }
           }
         }
@@ -7381,20 +7381,8 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
             "name": "Microsoft.NETCore.App.Host.win-x64",
             "version": "[5.0.13, 5.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
           }
         ],
         "frameworkReferences": {

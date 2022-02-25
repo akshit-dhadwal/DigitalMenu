@@ -71,6 +71,7 @@
                     </a>*@
     <form asp-action="DeleteDish" asp-controller="Menu" asp-route-id="@Model.DishId" method="post">
         <input type="submit" value="Delete" class="btn btn-danger" /> |
+         <input type="hidden" asp-for="DishId"/>
         <a asp-action="ShowDishes">Back to List</a>
     </form>
 </div>

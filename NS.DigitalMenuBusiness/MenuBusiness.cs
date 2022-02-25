@@ -37,9 +37,9 @@ namespace NS.DigitalMenuBusiness
         {
             return _imenutrepo.UpdateDish(menu, DishId);
         }
-        public bool DeleteDish(Menu menu)
+        public bool DeleteDish(MenuModel menuModel,int DishId)
         {
-           return _imenutrepo.DeleteDish(menu);
+           return _imenutrepo.DeleteDish(menuModel,DishId);
         }
     }
 }

@@ -90,9 +90,9 @@ namespace NS.DigitalMenu.WEB.Controllers
         }
 
         [HttpPost]
-        public IActionResult DeleteDish(Menu menu)
+        public IActionResult DeleteDish(MenuModel menuModel,int DishId)
         {
-            _imenubusiness.DeleteDish(menu);
+            _imenubusiness.DeleteDish(menuModel,DishId);
             return RedirectToAction("ShowDishes");
         }
     }

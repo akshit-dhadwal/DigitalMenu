@@ -143,16 +143,29 @@ namespace NS.DigitalMenuRepo
 
 
         }
-        public bool DeleteDish(Menu menu)
+        public bool DeleteDish(MenuModel menuModel, int DishId)
         {
             using (var context = new MenuDBContext())
             {
-                var paraamList = new List<SqlParameter>();
-                paraamList.Add(new SqlParameter("@DishId", menu.DishId));
-                context.Database.ExecuteSqlRaw("USP_Delete @DishId", paraamList);
+                //var paraamList = new List<SqlParameter>();
+                //paraamList.Add(new SqlParameter("@DishId", menu.DishId));
+                //context.Database.ExecuteSqlRaw("USP_Delete @DishId", paraamList);
+                Menu menu = new Menu();
+                menu.DishId = DishId;
+                menu.DishName = menuModel.DishName;
+                menu.DishCategory = menuModel.DishCategory;
+                menu.DishType = (Menu.Type)menuModel.DishType;
+                menu.DishDescription = menuModel.DishDescription;
+                menu.DishPrice = menuModel.DishPrice;
+                menu.DishQuantity = (Menu.Qunatity)menuModel.DishQuantity;
+                menu.DishImageUrl = menuModel.DishImageUrl;
+                menu.CreatedOn = menuModel.CreatedOn;
+
+                context.Remove(menu);
+                context.SaveChanges();
 
             }
-                return true;
+            return true;
         }
 
 

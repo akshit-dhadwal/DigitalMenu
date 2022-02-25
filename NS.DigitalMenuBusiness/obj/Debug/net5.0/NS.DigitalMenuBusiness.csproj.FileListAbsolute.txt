@@ -42,3 +42,25 @@ C:\Users\harsh jangid\Desktop\project-dotnet\DigitalMenu\NS.DigitalMenuBusiness\
 C:\Users\harsh jangid\Desktop\project-dotnet\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\ref\NS.DigitalMenuBusiness.dll
 C:\Users\harsh jangid\Desktop\project-dotnet\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.pdb
 C:\Users\harsh jangid\Desktop\project-dotnet\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.genruntimeconfig.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuBusiness.deps.json
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuBusiness.runtimeconfig.json
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuBusiness.runtimeconfig.dev.json
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuBusiness.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\ref\NS.DigitalMenuBusiness.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuBusiness.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuData.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuModel.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuRepo.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuRepo.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuData.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\bin\Debug\net5.0\NS.DigitalMenuModel.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.csproj.AssemblyReference.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.AssemblyInfoInputs.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.AssemblyInfo.cs
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.csproj.CopyComplete
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\ref\NS.DigitalMenuBusiness.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuBusiness\obj\Debug\net5.0\NS.DigitalMenuBusiness.genruntimeconfig.cache

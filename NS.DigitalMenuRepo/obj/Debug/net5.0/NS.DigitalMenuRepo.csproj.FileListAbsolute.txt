@@ -38,3 +38,23 @@ C:\Users\harsh jangid\Desktop\project-dotnet\DigitalMenu\NS.DigitalMenuRepo\obj\
 C:\Users\harsh jangid\Desktop\project-dotnet\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\ref\NS.DigitalMenuRepo.dll
 C:\Users\harsh jangid\Desktop\project-dotnet\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.pdb
 C:\Users\harsh jangid\Desktop\project-dotnet\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.genruntimeconfig.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuRepo.deps.json
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuRepo.runtimeconfig.json
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuRepo.runtimeconfig.dev.json
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuRepo.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\ref\NS.DigitalMenuRepo.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuRepo.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuData.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuModel.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuData.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\bin\Debug\net5.0\NS.DigitalMenuModel.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.csproj.AssemblyReference.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.AssemblyInfoInputs.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.AssemblyInfo.cs
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.csproj.CoreCompileInputs.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.csproj.CopyComplete
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\ref\NS.DigitalMenuRepo.dll
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.pdb
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenuRepo\obj\Debug\net5.0\NS.DigitalMenuRepo.genruntimeconfig.cache
