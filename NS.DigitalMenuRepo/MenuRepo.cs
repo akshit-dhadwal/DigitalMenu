@@ -12,23 +12,12 @@ using System.Threading.Tasks;
 namespace NS.DigitalMenuRepo
 {
     public class MenuRepo:IMenuRepo
-
     {
+        //To add new dishesh in Database
         public bool AddDish(MenuModel menuModel)
         {
             using (var context = new MenuDBContext())
             {
-                //Menu menu = new Menu();
-
-                //menu.DishName = menuModel.DishName;
-                //menu.DishCategory = menuModel.DishCategory; 
-                //menuModel.DishType = menuModel.DishType;
-                //menuModel.DishDescription = menuModel.DishDescription;
-                //menuModel.DishPrice = menuModel.DishPrice;
-                //menuModel.DishQuantity = menuModel.DishQuantity;
-                //menuModel.DishImageUrl = menuModel.DishImageUrl;
-                //menuModel.CreatedOn = DateTime.UtcNow;
-
                 var newdish = new Menu()
                 {
                     DishCategory = menuModel.DishCategory,
@@ -42,14 +31,13 @@ namespace NS.DigitalMenuRepo
                 };
                 context.Add(newdish);
                 context.SaveChanges();
-
-
                 //context.Menus.Add(menu);
                 //context.SaveChanges();
             }
                 return true;
 
         }
+        //To Show the Full list
         public List<Menu> ShowDishes()
         {
             List<Menu> returnList = new List<Menu>();
@@ -72,59 +60,18 @@ namespace NS.DigitalMenuRepo
             return returnList;
         }
 
+
+        //Get by it's DishId
         public Menu GetDishById(int DishId)
         {
-            //var context = new MenuDBContext();
-            //var result = context.Menus.FromSqlRaw("USP_GetById @DishId", new SqlParameter("@DishId", DishId));
-            //return (Menu)result;
-
             MenuDBContext context = new MenuDBContext();
             var menu = context.Menus.SingleOrDefault(x => x.DishId == DishId);
             return menu;
-            //.Where(x => x.DishId == DishId).FirstOrDefault()
-            //MenuDBContext context = new MenuDBContext();
-            //var menu = context.Menus.Find(DishId);
-
-            //if (menu != null)
-            //{
-            //    var menudetails = new Menu()
-            //    {
-            //        DishId = menu.DishId,
-            //        DishName = menu.DishName,
-            //        DishCategory = menu.DishCategory,
-            //        DishType = (Menu.Type)menu.DishType,
-            //        DishDescription = menu.DishDescription,
-            //        DishPrice = menu.DishPrice,
-            //        DishQuantity = (Menu.Qunatity)menu.DishQuantity,
-            //        DishImageUrl = menu.DishImageUrl,
-            //    };
-            //    return menudetails;
-            //}
-
-            //return null;
-
         }
 
         public bool UpdateDish(Menu menu,int DishId)
         {
-            //using (var context = new MenuDBContext())
-            //{
-
-            //    //Menu menu = new Menu();
-
-
-            //    //menu.DishId = DishId;
-            //    //menu.DishName = menuModel.DishName;
-            //    //menu.DishCategory = menuModel.DishCategory;
-            //    //menu.DishType = (Menu.Type)menuModel.DishType;
-            //    //menu.DishDescription = menuModel.DishDescription;
-            //    //menu.DishPrice = menuModel.DishPrice;
-            //    //menu.DishQuantity = (Menu.Qunatity)menuModel.DishQuantity;
-            //    //menu.DishImageUrl = menuModel.DishImageUrl;
-            //    //context.Menus.Update(menu);
-            //    context.Entry(menuModel).State = EntityState.Modified;
-            //    context.SaveChanges();
-            //}
+            //Stored Procedure Method UPDATE
             using (var context = new MenuDBContext())
             {
                 var paraamList = new List<SqlParameter>();
@@ -147,9 +94,6 @@ namespace NS.DigitalMenuRepo
         {
             using (var context = new MenuDBContext())
             {
-                //var paraamList = new List<SqlParameter>();
-                //paraamList.Add(new SqlParameter("@DishId", menu.DishId));
-                //context.Database.ExecuteSqlRaw("USP_Delete @DishId", paraamList);
                 Menu menu = new Menu();
                 menu.DishId = DishId;
                 menu.DishName = menuModel.DishName;
@@ -160,15 +104,10 @@ namespace NS.DigitalMenuRepo
                 menu.DishQuantity = (Menu.Qunatity)menuModel.DishQuantity;
                 menu.DishImageUrl = menuModel.DishImageUrl;
                 menu.CreatedOn = menuModel.CreatedOn;
-
                 context.Remove(menu);
                 context.SaveChanges();
-
             }
             return true;
         }
-
-
-
     }
 }

@@ -10,7 +10,7 @@ namespace NS.DigitalMenu.WEB.Controllers
 {
     public class MenuController : Controller
     {
-        private readonly IMenuBusiness _imenubusiness = null;
+        private readonly IMenuBusiness _imenubusiness;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
         public MenuController(IMenuBusiness imenubusiness , IWebHostEnvironment webHostEnvironment)
