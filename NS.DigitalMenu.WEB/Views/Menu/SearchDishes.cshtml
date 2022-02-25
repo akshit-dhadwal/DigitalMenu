@@ -1,0 +1,12 @@
+﻿@model IEnumerable<NS.DigitalMenuData.Entities.Menu>
+
+ <div class="container">
+    @using(Html.BeginForm("SearchDishes","Menu",FormMethod.Get))
+
+    {
+        <b> Search by :</b>
+        @Html.RadioButton("SearchBy","DishCategory",true)<text>Vegitarian </text>
+        @Html.RadioButton("SearchBy","DishCategory")<text>Non-Vegitarian </text>
+        <input type="submit" value="Search" class="btn-primary">
+    }
+  </div>

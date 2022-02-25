@@ -65,23 +65,20 @@ namespace NS.DigitalMenu.WEB.Controllers
        [HttpPost]
         public IActionResult UpdateDish(Menu menu,int DishId)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    _imenubusiness.UpdateDish(menuModel);
+            if (ModelState.IsValid)
+            {
+              
 
+                _imenubusiness.UpdateDish(menu, DishId);
 
-            //    return RedirectToAction("ShowDishes");
+                return RedirectToAction("ShowDishes");
 
-            //}
-            //else
-            //{
-            //    return View(menuModel);
-            //}
-            //var res = _imenubusiness.UpdateDish(menuModel);
-            //var result = _imenubusiness.ShowDishes();
-            //return View("ShowDishes", result);
-             _imenubusiness.UpdateDish(menu,DishId);
-            return RedirectToAction("ShowDishes");
+            }
+            else
+            {
+                return View(menu);
+            }
+            
         }
 
         public IActionResult DeleteDish(int Id)
@@ -94,6 +91,12 @@ namespace NS.DigitalMenu.WEB.Controllers
         {
             _imenubusiness.DeleteDish(menuModel,DishId);
             return RedirectToAction("ShowDishes");
+        }
+
+        [HttpGet]
+        public IActionResult SearchDishes(string SearchBy)
+        {
+            return View();
         }
     }
 }

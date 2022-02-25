@@ -47,8 +47,8 @@
     <div class="form-group">
        <label asp-for="DishPhoto"></label>
       <div class="custom-file">
-          <input asp-for="DishPhoto" class="custom-file-input" id="customFile" />
-          <label class="custom-file-label" for="customFile" >Choose File</label>
+         
+          @Html.TextBoxFor(m => m.DishPhoto, new { type = "file", multiple = "multiple"})
       </div>
        <span asp-validation-for="DishPhoto" class="text-danger"></span>
     </div>

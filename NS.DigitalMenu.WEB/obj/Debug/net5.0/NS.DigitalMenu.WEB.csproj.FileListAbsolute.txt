@@ -472,3 +472,4 @@ C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenu.WEB\obj\De
 C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenu.WEB\obj\Debug\net5.0\ref\NS.DigitalMenu.WEB.dll
 C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenu.WEB\obj\Debug\net5.0\NS.DigitalMenu.WEB.pdb
 C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenu.WEB\obj\Debug\net5.0\NS.DigitalMenu.WEB.genruntimeconfig.cache
+C:\Users\Akshit Dadhwal\Desktop\New folder\DigitalMenu\NS.DigitalMenu.WEB\obj\Debug\net5.0\Razor\Views\Menu\SearchDishes.cshtml.g.cs
