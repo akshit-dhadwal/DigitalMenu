@@ -1,9 +1,12 @@
-﻿
+﻿ <link rel="stylesheet" href="~/css/AddDish.css" />
 @*@using static NS.DigitalMenuData.Entities.Menu*@
 @model  NS.DigitalMenuModel.MenuModel
 
+<div class="FormBackground">
 
- <form method="post" enctype="multipart/form-data" asp-action="AddDish" asp-controller="Menu">
+   <img src="~/Image/background.jpg" class="yo" alt="food-image">
+   <div class="topic">
+      <form class="Form" method="post" enctype="multipart/form-data" asp-action="AddDish" asp-controller="Menu">
        <div asp-validation-summary="All" class="text-danger"></div>
 
       <div class="form-group">
@@ -56,3 +59,8 @@
     </div>
 
    </form>
+   </div>
+   
+
+</div>
+ 
