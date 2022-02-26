@@ -2,10 +2,22 @@
 @*@using static NS.DigitalMenuData.Entities.Menu*@
 @model  NS.DigitalMenuModel.MenuModel
 
-<div class="FormBackground">
+@*<div class="FormBackground">
 
    <img src="~/Image/background.jpg" class="yo" alt="food-image">
-   <div class="topic">
+   <div class="topic">*@
+
+       <div class="container">
+    <h3 class="display-4">Add New Dish</h3>
+    <hr />
+    @if(ViewBag.IsSuccess == true)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Congratulations !</strong> You Succesfully added New Dish.<br />
+ 
+</div>
+    }
+    </div>
       <form class="Form" method="post" enctype="multipart/form-data" asp-action="AddDish" asp-controller="Menu">
        <div asp-validation-summary="All" class="text-danger"></div>
 
@@ -59,8 +71,4 @@
     </div>
 
    </form>
-   </div>
-   
-
-</div>
  

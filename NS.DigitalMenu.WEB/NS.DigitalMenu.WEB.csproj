@@ -27,5 +27,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\dish\dishpicture\" />
   </ItemGroup>
-
+	
+	
 </Project>

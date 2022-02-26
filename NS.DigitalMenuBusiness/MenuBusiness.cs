@@ -41,5 +41,10 @@ namespace NS.DigitalMenuBusiness
         {
            return _imenutrepo.DeleteDish(menuModel,DishId);
         }
+
+        public List<Menu> SearchDish(string SearchBy, string search)
+        {
+            return _imenutrepo.SearchDish(SearchBy, search);
+        }
     }
 }

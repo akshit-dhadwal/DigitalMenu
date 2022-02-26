@@ -23,8 +23,9 @@ namespace NS.DigitalMenu.WEB.Controllers
             return View();
         }
 
-        public IActionResult AddDish()
+        public IActionResult AddDish(bool isSuccess = false)
         {
+            ViewBag.IsSuccess = isSuccess;
             return View();
         }
         [HttpPost]
@@ -44,7 +45,7 @@ namespace NS.DigitalMenu.WEB.Controllers
                 }
                 _imenubusiness.AddDish(menuModel);
 
-                return RedirectToAction("AddDish", "Menu");
+                return RedirectToAction(nameof(AddDish), new { isSuccess = true });
 
             }
 
@@ -94,9 +95,9 @@ namespace NS.DigitalMenu.WEB.Controllers
         }
 
         [HttpGet]
-        public IActionResult SearchDishes(string SearchBy)
+        public IActionResult SearchDishes(string SearchBy,string search)
         {
-            return View();
+            return View(_imenubusiness.SearchDish(SearchBy,search));
         }
     }
 }

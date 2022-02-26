@@ -19,6 +19,6 @@ namespace NS.DigitalMenuRepo
 
         bool DeleteDish(MenuModel menuModel,int DishId);
 
-        //List<StudentDeptModel> GetStudent();
+        List<Menu> SearchDish(string SearchBy, string search);
     }
 }

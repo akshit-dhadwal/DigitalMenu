@@ -1,7 +1,10 @@
-﻿using Microsoft.Data.SqlClient;
+﻿
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using NS.DigitalMenuData.Entities;
 using NS.DigitalMenuModel;
+
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,23 +14,14 @@ using System.Threading.Tasks;
 
 namespace NS.DigitalMenuRepo
 {
-    public class MenuRepo:IMenuRepo
+    public class MenuRepo : IMenuRepo
 
     {
         public bool AddDish(MenuModel menuModel)
         {
             using (var context = new MenuDBContext())
             {
-                //Menu menu = new Menu();
-
-                //menu.DishName = menuModel.DishName;
-                //menu.DishCategory = menuModel.DishCategory; 
-                //menuModel.DishType = menuModel.DishType;
-                //menuModel.DishDescription = menuModel.DishDescription;
-                //menuModel.DishPrice = menuModel.DishPrice;
-                //menuModel.DishQuantity = menuModel.DishQuantity;
-                //menuModel.DishImageUrl = menuModel.DishImageUrl;
-                //menuModel.CreatedOn = DateTime.UtcNow;
+               
 
                 var newdish = new Menu()
                 {
@@ -44,10 +38,9 @@ namespace NS.DigitalMenuRepo
                 context.SaveChanges();
 
 
-                //context.Menus.Add(menu);
-                //context.SaveChanges();
+              
             }
-                return true;
+            return true;
 
         }
         public List<Menu> ShowDishes()
@@ -74,57 +67,17 @@ namespace NS.DigitalMenuRepo
 
         public Menu GetDishById(int DishId)
         {
-            //var context = new MenuDBContext();
-            //var result = context.Menus.FromSqlRaw("USP_GetById @DishId", new SqlParameter("@DishId", DishId));
-            //return (Menu)result;
+ 
 
             MenuDBContext context = new MenuDBContext();
-            var menu = context.Menus.SingleOrDefault(x => x.DishId == DishId);
+            var menu = context.Menus.FirstOrDefault(x => x.DishId == DishId);
             return menu;
-            //.Where(x => x.DishId == DishId).FirstOrDefault()
-            //MenuDBContext context = new MenuDBContext();
-            //var menu = context.Menus.Find(DishId);
-
-            //if (menu != null)
-            //{
-            //    var menudetails = new Menu()
-            //    {
-            //        DishId = menu.DishId,
-            //        DishName = menu.DishName,
-            //        DishCategory = menu.DishCategory,
-            //        DishType = (Menu.Type)menu.DishType,
-            //        DishDescription = menu.DishDescription,
-            //        DishPrice = menu.DishPrice,
-            //        DishQuantity = (Menu.Qunatity)menu.DishQuantity,
-            //        DishImageUrl = menu.DishImageUrl,
-            //    };
-            //    return menudetails;
-            //}
-
-            //return null;
-
+            
         }
 
-        public bool UpdateDish(Menu menu,int DishId)
+        public bool UpdateDish(Menu menu, int DishId)                    //update through stored procedure
         {
-            //using (var context = new MenuDBContext())
-            //{
-
-            //    //Menu menu = new Menu();
-
-
-            //    //menu.DishId = DishId;
-            //    //menu.DishName = menuModel.DishName;
-            //    //menu.DishCategory = menuModel.DishCategory;
-            //    //menu.DishType = (Menu.Type)menuModel.DishType;
-            //    //menu.DishDescription = menuModel.DishDescription;
-            //    //menu.DishPrice = menuModel.DishPrice;
-            //    //menu.DishQuantity = (Menu.Qunatity)menuModel.DishQuantity;
-            //    //menu.DishImageUrl = menuModel.DishImageUrl;
-            //    //context.Menus.Update(menu);
-            //    context.Entry(menuModel).State = EntityState.Modified;
-            //    context.SaveChanges();
-            //}
+            
             using (var context = new MenuDBContext())
             {
                 var paraamList = new List<SqlParameter>();
@@ -136,7 +89,7 @@ namespace NS.DigitalMenuRepo
                 paraamList.Add(new SqlParameter("@DishPrice", menu.DishPrice));
                 paraamList.Add(new SqlParameter("@DishQuantity", menu.DishQuantity));
                 paraamList.Add(new SqlParameter("@DishImageUrl", menu.DishImageUrl));
-                // paraamList.Add(new SqlParameter("@Describe", candidateModel.Describe));
+                
                 context.Database.ExecuteSqlRaw("USP_Update @DishId, @DishName, @DishDescription,@DishPrice,@DishCategory, @DishType, @DishQuantity, @DishImageUrl", paraamList);
             }
             return true;
@@ -147,9 +100,7 @@ namespace NS.DigitalMenuRepo
         {
             using (var context = new MenuDBContext())
             {
-                //var paraamList = new List<SqlParameter>();
-                //paraamList.Add(new SqlParameter("@DishId", menu.DishId));
-                //context.Database.ExecuteSqlRaw("USP_Delete @DishId", paraamList);
+               
                 Menu menu = new Menu();
                 menu.DishId = DishId;
                 menu.DishName = menuModel.DishName;
@@ -168,7 +119,25 @@ namespace NS.DigitalMenuRepo
             return true;
         }
 
+        public List<Menu> SearchDish(string SearchBy,string search)
 
+        {
+            MenuDBContext context = new MenuDBContext();    
+            List<Menu> list = new List<Menu>();
+            
 
+            if(SearchBy == null)
+                return list = context.Menus.Where(x => x.DishCategory == search || search == null).ToList();  
+
+            else if (SearchBy == "VEGITARIAN")
+            
+
+                return list = context.Menus.Where(x => x.DishCategory.Equals("VEGITARIAN")).ToList();
+
+            else
+            
+                return list = context.Menus.Where(x => x.DishCategory.Equals("NON-VEGITARIAN")).ToList();
+            
+        }
     }
 }

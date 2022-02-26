@@ -1,12 +1,37 @@
-﻿@model IEnumerable<NS.DigitalMenuData.Entities.Menu>
+﻿
+@model IEnumerable<NS.DigitalMenuData.Entities.Menu>
 
  <div class="container">
     @using(Html.BeginForm("SearchDishes","Menu",FormMethod.Get))
 
     {
         <b> Search by :</b>
-        @Html.RadioButton("SearchBy","DishCategory",true)<text>Vegitarian </text>
-        @Html.RadioButton("SearchBy","DishCategory")<text>Non-Vegitarian </text>
+        @Html.RadioButton("SearchBy","VEGITARIAN",true)<text>VEGITARIAN </text>
+        @Html.RadioButton("SearchBy","NON-VEGITARIAN")<text>NON-VEGITARIAN</text>
+        <br />
         <input type="submit" value="Search" class="btn-primary">
     }
   </div>
+
+  <div class="container">
+           <div class="row"> 
+            @foreach (var dish in Model)
+          
+            {
+                 <div class="col mb-4">
+                 <div class="card" style="width: 18rem;">
+                    <img src="@dish.DishImageUrl" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Name - @dish.DishName</h3>
+                      <h4 class="card-title">Category - @dish.DishCategory</h4>
+                      <h4 class="card-title">Type - @dish.DishType</h4>
+                      <h5 class="card-title">Price - @dish.DishPrice</h5>
+                      <h6 class="card-title">Quantity - @dish.DishQuantity</h6>
+                    </div>
+                  </div>
+              </div>
+            }
+            
+            </div>
+              </div>
+              
