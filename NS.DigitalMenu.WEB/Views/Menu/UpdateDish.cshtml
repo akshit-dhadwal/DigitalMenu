@@ -10,14 +10,10 @@
 <hr />*@
 <div class="row">
     <div class="col-md-4">
-        <form asp-controller="Menu" asp-action="UpdateDish" method="post">
+        <form asp-controller="Menu" asp-action="UpdateDish" method="post" enctype="multipart/form-data">
             <input type="hidden" asp-for="DishId"/>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           @* <div class="form-group">
-                <label asp-for="DishId" class="control-label"></label>
-                <input asp-for="DishId" class="form-control" disabled />
-                <span asp-validation-for="DishId" class="text-danger"></span>
-            </div>*@
+          
             <div class="form-group">
                 <label asp-for="DishName" class="control-label"></label>
                 <input asp-for="DishName" class="form-control" />
@@ -41,28 +37,26 @@
                 <span asp-validation-for="DishCategory" class="text-danger"></span>
             </div>
             <div class="form-group">
-               @* <label asp-for="DishType" class="control-label"></label>*@
+              
                 @Html.DropDownListFor(m => m.DishType,
       new SelectList(Enum.GetValues(typeof(NS.DigitalMenuModel.MenuModel.Type))), "Select Type Of Dish")
                 <span asp-validation-for="DishType" class="text-danger"></span>
             </div>
             <div class="form-group">
-                @*<label asp-for="DishQuantity" class="control-label"></label>*@
+               
                 @Html.DropDownListFor(m => m.DishQuantity,
       new SelectList(Enum.GetValues(typeof(NS.DigitalMenuModel.MenuModel.Qunatity))), "Select Dish Quantity")
                 <span asp-validation-for="DishQuantity" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DishImageUrl" class="control-label"></label>
-                <input asp-for="DishImageUrl" class="form-control"  />
-                @* @Html.TextBoxFor(m => m.DishImageUrl, new { type = "file", multiple = "multiple"})*@
-                <span asp-validation-for="DishImageUrl" class="text-danger"></span>
+                <label asp-for="DishPhoto" class="control-label"></label>
+              <img src="@Model.DishImageUrl" height=80 ,width=80/>
+               @* <input type="text" asp-for =DishPhoto />*@
+                
+                 @Html.TextBoxFor(m => m.DishPhoto, new { type = "file", multiple = "multiple"})
+                <span asp-validation-for="DishPhoto" class="text-danger"></span>
             </div>
-            @*<div class="form-group">
-                <label asp-for="CreatedOn" class="control-label"></label>
-                <input asp-for="CreatedOn" class="form-control"  />
-                <span asp-validation-for="CreatedOn" class="text-danger"></span>
-            </div>*@
+           
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

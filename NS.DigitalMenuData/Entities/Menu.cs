@@ -36,6 +36,7 @@ namespace NS.DigitalMenuData.Entities
 
         [Required(ErrorMessage = "Please add price ")]
         [Display(Name = "Price")]
+        [Range(100,3000,ErrorMessage ="please add between 100 to 3000")]
         public int DishPrice { get; set; }
 
 
@@ -54,8 +55,10 @@ namespace NS.DigitalMenuData.Entities
 
 
         [NotMapped]
+       [Required(ErrorMessage = "please upload the image for dish")]
         public IFormFile DishPhoto { get; set; }
 
+        [Required(ErrorMessage = "plese upload the image for dish")]
         public string DishImageUrl { get; set; }
 
         public DateTime? CreatedOn { get; set; }

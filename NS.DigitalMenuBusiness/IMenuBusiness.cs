@@ -15,7 +15,7 @@ namespace NS.DigitalMenuBusiness
         List<Menu> ShowDishes();
 
         Menu GetDishById(int DishId);
-        bool UpdateDish(Menu menu,int DishId);
+        bool UpdateDish(Menu menu,int DishId,string wwwrootpath);
 
         bool DeleteDish(MenuModel menuModel, int DishId);
 

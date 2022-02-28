@@ -3,11 +3,10 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using NS.DigitalMenuData.Entities;
 using NS.DigitalMenuModel;
-
-
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +16,7 @@ namespace NS.DigitalMenuRepo
     public class MenuRepo : IMenuRepo
 
     {
+        
         public bool AddDish(MenuModel menuModel)
         {
             using (var context = new MenuDBContext())
@@ -71,33 +71,71 @@ namespace NS.DigitalMenuRepo
 
             MenuDBContext context = new MenuDBContext();
             var menu = context.Menus.FirstOrDefault(x => x.DishId == DishId);
+
+          
             return menu;
+
             
         }
 
-        public bool UpdateDish(Menu menu, int DishId)                    //update through stored procedure
+        public bool UpdateDish(Menu menu, int DishId,string wwwrootpath)                    //update through stored procedure
         {
-            
-            using (var context = new MenuDBContext())
+            if(menu.DishPhoto != null)
             {
-                var paraamList = new List<SqlParameter>();
-                paraamList.Add(new SqlParameter("@DishId", menu.DishId));
-                paraamList.Add(new SqlParameter("@DishName", menu.DishName));
-                paraamList.Add(new SqlParameter("@DishCategory", menu.DishCategory));
-                paraamList.Add(new SqlParameter("@DishType", menu.DishType));
-                paraamList.Add(new SqlParameter("@DishDescription", menu.DishDescription));
-                paraamList.Add(new SqlParameter("@DishPrice", menu.DishPrice));
-                paraamList.Add(new SqlParameter("@DishQuantity", menu.DishQuantity));
-                paraamList.Add(new SqlParameter("@DishImageUrl", menu.DishImageUrl));
-                
-                context.Database.ExecuteSqlRaw("USP_Update @DishId, @DishName, @DishDescription,@DishPrice,@DishCategory, @DishType, @DishQuantity, @DishImageUrl", paraamList);
+
+                string imageFileName = Path.GetFileNameWithoutExtension(menu.DishPhoto.FileName);
+                string imageFileExtension = Path.GetExtension(menu.DishPhoto.FileName);
+
+                string imageName = imageFileName + imageFileExtension;
+
+                string imagePath = Path.Combine(wwwrootpath + "/dishpictures", imageName);
+                string imagePath1 = Path.Combine("/dishpictures", imageName);
+                menu.DishPhoto.CopyTo(new FileStream(imagePath, FileMode.Create));
+
+                using (var context = new MenuDBContext())
+                {
+                    var paraamList = new List<SqlParameter>();
+                    paraamList.Add(new SqlParameter("@DishId", menu.DishId));
+                    paraamList.Add(new SqlParameter("@DishName", menu.DishName));
+                    paraamList.Add(new SqlParameter("@DishCategory", menu.DishCategory));
+                    paraamList.Add(new SqlParameter("@DishType", menu.DishType));
+                    paraamList.Add(new SqlParameter("@DishDescription", menu.DishDescription));
+                    paraamList.Add(new SqlParameter("@DishPrice", menu.DishPrice));
+                    paraamList.Add(new SqlParameter("@DishQuantity", menu.DishQuantity));
+                    paraamList.Add(new SqlParameter("@DishImageUrl", imagePath1));
+
+                    context.Database.ExecuteSqlRaw("USP_Update @DishId, @DishName, @DishDescription,@DishPrice,@DishCategory, @DishType, @DishQuantity, @DishImageUrl", paraamList);
+                }
             }
+            else
+            {
+                using (var context = new MenuDBContext())
+                {
+                    var paraamList = new List<SqlParameter>();
+                    paraamList.Add(new SqlParameter("@DishId", menu.DishId));
+                    paraamList.Add(new SqlParameter("@DishName", menu.DishName));
+                    paraamList.Add(new SqlParameter("@DishCategory", menu.DishCategory));
+                    paraamList.Add(new SqlParameter("@DishType", menu.DishType));
+                    paraamList.Add(new SqlParameter("@DishDescription", menu.DishDescription));
+                    paraamList.Add(new SqlParameter("@DishPrice", menu.DishPrice));
+                    paraamList.Add(new SqlParameter("@DishQuantity", menu.DishQuantity));
+                 //   paraamList.Add(new SqlParameter("@DishImageUrl", menu.DishImageUrl));
+
+                    context.Database.ExecuteSqlRaw("uspupdate @DishId, @DishName, @DishDescription,@DishPrice,@DishCategory, @DishType, @DishQuantity", paraamList);
+                }
+
+
+            }
+           
+
+         
             return true;
 
 
         }
         public bool DeleteDish(MenuModel menuModel, int DishId)
         {
+           
             using (var context = new MenuDBContext())
             {
                

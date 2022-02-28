@@ -46,6 +46,7 @@ namespace NS.DigitalMenu.WEB.Controllers
                 _imenubusiness.AddDish(menuModel);
 
                 return RedirectToAction(nameof(AddDish), new { isSuccess = true });
+               
 
             }
 
@@ -54,31 +55,29 @@ namespace NS.DigitalMenu.WEB.Controllers
 
         public IActionResult ShowDishes()
         {
-
+            
             return View(_imenubusiness.ShowDishes());
         }
 
         public IActionResult UpdateDish(int Id)
         {
+
             return View(_imenubusiness.GetDishById(Id));
         }
 
        [HttpPost]
         public IActionResult UpdateDish(Menu menu,int DishId)
         {
-            if (ModelState.IsValid)
-            {
-              
-
-                _imenubusiness.UpdateDish(menu, DishId);
+           
+                var wwwrootpath = _webHostEnvironment.WebRootPath;
+                _imenubusiness.UpdateDish(menu, DishId, wwwrootpath);
 
                 return RedirectToAction("ShowDishes");
 
-            }
-            else
-            {
-                return View(menu);
-            }
+            
+        
+               
+            
             
         }
 
@@ -90,8 +89,12 @@ namespace NS.DigitalMenu.WEB.Controllers
         [HttpPost]
         public IActionResult DeleteDish(MenuModel menuModel,int DishId)
         {
-            _imenubusiness.DeleteDish(menuModel,DishId);
-            return RedirectToAction("ShowDishes");
+           
+
+                _imenubusiness.DeleteDish(menuModel, DishId);
+                return RedirectToAction("ShowDishes");
+           
+           
         }
 
         [HttpGet]
